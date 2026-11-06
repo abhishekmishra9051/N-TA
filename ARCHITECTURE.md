@@ -225,7 +225,7 @@ sequenceDiagram
     participant Cache as Vercel Edge CDN Cache
     participant Static as Application Chunks (dist/)
 
-    Client->>Edge: HTTPS GET / (Host: dx12-notepad.vercel.app)
+    Client->>Edge: HTTPS GET / (Host: https://usenota07.vercel.app/)
     Edge->>Cache: Lookup /index.html
     Cache-->>Edge: Cache Hit (200 OK)
     Edge->>Client: 200 OK (HTML + Security Headers + CSP)
@@ -511,7 +511,7 @@ graph LR
     end
 
     ProductionBuild --> DeployTrigger
-    EdgeDeploy --> LiveProd["https://dx12-notepad.vercel.app/"]
+    EdgeDeploy --> LiveProd["https://usenota07.vercel.app/"]
 ```
 
 ### 10.2 Production Build Artifacts Analysis
@@ -626,7 +626,7 @@ Benchmarked using concurrent HTTP keep-alive requests against the local server:
 │   ├── pwa-maskable-512x512.png# 512x512 PNG maskable icon with safe-zone margin
 │   ├── manifest.json           # Web App Manifest (standalone, Warm Ivory theme, PWA icons)
 │   ├── robots.txt              # Search engine crawler instructions referencing sitemap.xml
-│   └── sitemap.xml             # Search engine canonical XML index for dx12-notepad.vercel.app
+│   └── sitemap.xml             # Search engine canonical XML index for https://usenota07.vercel.app/
 └── src/
     ├── App.tsx                 # Core studio application: state orchestrator, keyboard listeners, canvas
     ├── main.tsx                # Client bootstrap: mounts ErrorBoundary and React StrictRoot
