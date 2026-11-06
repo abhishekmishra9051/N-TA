@@ -1,20 +1,91 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
 
-# Run and deploy your AI Studio app
+# NŌTA – React Application
 
-This contains everything you need to run your app locally.
+A modern, responsive web application built using React.js.
 
-View your app in AI Studio: https://ai.studio/apps/53aba70d-d694-4aa4-a1a0-45c4bd4f5a68
+## 🚀 Features
 
-## Run Locally
+- Responsive user interface
+- Modern React architecture
+- Reusable components
+- Fast development with Vite
+- Easy deployment using Vercel
 
-**Prerequisites:**  Node.js
+## 🛠️ Technologies Used
 
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📋 Prerequisites
+
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
+
+## 💻 Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate to the project directory:
+
+```bash
+cd NŌTA
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## ▶️ Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+This project can be deployed using [Vercel](https://vercel.com/).
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Configure the build settings.
+4. Click **Deploy**.
+
+## 📁 Project Structure
+
+```text
+NŌTA/
+├── public/
+├── src/
+├── package.json
+├── package-lock.json
+├── index.html
+├── vite.config.js
+└── README.md
+```
+
+## 📄 License
+
+This project is available for personal and educational use.
