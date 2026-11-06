@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    /* Typography Tokens */
+    --font-display: 'Instrument Serif', 'Lora', Georgia, 'Times New Roman', serif;
+    --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* NŌTA Luxury Design System — Warm Ivory + Charcoal (Light Mode) */
+    --nota-warm-ivory: #F1EEE8;
+    --nota-soft-paper: #FAF9F6;
+    --nota-charcoal: #29251F;
+    --nota-deep-ink: #171614;
+    --nota-muted-sand: #B7A895;
+    --nota-stone: #88877D;
+    --nota-border: #DED8CF;
+    --nota-text-secondary: #70685E;
+
+    /* Semantic Surface & Text Tokens */
+    --bg-canvas: #FAF9F6;
+    --bg-sidebar: #F1EEE8;
+    --bg-elevated: #FFFFFF;
+    --bg-subtle: #E6E1D8;
+    --text-primary: #171614;
+    --text-heading: #29251F;
+    --text-secondary: #70685E;
+    --text-muted: #5C554C;
+    --border-subtle: #DED8CF;
+    --accent-sand: #B7A895;
+  }
+
+  .dark {
+    /* NŌTA Dark Mode Tokens */
+    --bg-canvas: #0B0B0D;
+    --bg-sidebar: #141416;
+    --bg-elevated: #1C1C1F;
+    --bg-subtle: #232327;
+    --text-primary: #F1EEE8;
+    --text-heading: #F1EEE8;
+    --text-secondary: #A7A29A;
+    --text-muted: #A7A29A;
+    --border-subtle: #303034;
+    --accent-sand: #B7A895;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+  }
+}
+
+.font-nota-display {
+  font-family: var(--font-display);
+}
+
+.font-editorial-sans {
+  font-family: var(--font-sans);
+}
+
+.font-editorial-serif {
+  font-family: var(--font-serif);
+}
+
+.font-editorial-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom subtle scrollbars for distraction-free writing */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 135, 125, 0.28);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(112, 104, 94, 0.48);
+}
+
+/* Hide horizontal scrollbar on category strip while preserving touch scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* WCAG 2.2 AA Reduced Motion Compliance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

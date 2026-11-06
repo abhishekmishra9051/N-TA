@@ -1,0 +1,6 @@
+{
+  "name": "DX12 — Minimalist Writing Studio",
+  "description": "A distraction-free, minimalist notepad and writing environment engineered for clarity, speed, and typographic elegance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

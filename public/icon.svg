@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="112" fill="#171614"/>
+  <rect x="24" y="24" width="464" height="464" rx="92" stroke="#B7A895" stroke-opacity="0.28" stroke-width="4"/>
+  <!-- Macron Bar -->
+  <rect x="152" y="112" width="208" height="22" rx="11" fill="#B7A895"/>
+  <!-- Editorial N Monogram -->
+  <path d="M168 376V180H196.8L315.2 329.6V180H344V376H315.2L196.8 226.4V376H168Z" fill="#F1EEE8"/>
+</svg>

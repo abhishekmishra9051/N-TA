@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Exclude any query-parameter utility states from indexing
+Disallow: /*?autostart=*
+
+Sitemap: https://dx12-notepad.vercel.app/sitemap.xml
